@@ -6,7 +6,34 @@
     border-radius: 20px;
     box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.1);
 }
+.todos form {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+form input[type='text'] {
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #3f4759;
+    border: none;
+    height: 50px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    width: 400px;
+    color: white;
+}
+form input[type='text']:focus {
+    outline: none;
+}
+form input[type='submit']:hover {
+    cursor: pointer;
+    background-color: #fc588b;
+    transition: ease 0.5s;
+    transform: scale(1.05);
+}
 .todo {
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.1);
     margin: auto;
     width: 90%;
     display: flex;
@@ -17,8 +44,10 @@
     height: 60px;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .todo:hover {
+    box-shadow: 0px 5px 15px 5px rgba(254, 72, 128,0.5);
     transition: ease 0.5s;
     transform: scale(1.05);
     cursor: pointer;
@@ -76,6 +105,8 @@
     outline: none;
 }
 .todo-submit {
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
     display: block;
     width: 100%;
     max-width: 200px;
